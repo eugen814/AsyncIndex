@@ -16,7 +16,7 @@ Installation Instructions
 ### Via modman
 
 - Install [modman](https://github.com/colinmollenhour/modman)
-- Use the command from your Magento installation folder: `modman clone https://github.com/magento-hackathon/Hackathon_AsyncIndex/`
+- Use the command from your Magento installation folder: `modman clone https://github.com/eugen814/AsyncIndex.git`
 
 ### Via composer
 - Install [composer](http://getcomposer.org/download/)
@@ -27,12 +27,12 @@ Installation Instructions
 {
     ...
     "require": {
-        "magento-hackathon/hackathon_asyncindex":"*"
+        "eugen814/AsyncIndex":"dev-master"
     },
     "repositories": [
 	    {
             "type": "composer",
-            "url": "http://packages.firegento.com"
+            "url": "https://github.com/eugen814/AsyncIndex.git"
         }
     ],
     "extra":{
@@ -54,7 +54,7 @@ Uninstallation
 --------------
 * Remove all extension files from your Magento installation
 * Via modman: `modman remove Hackathon_AsyncIndex`
-* Via composer, remove the line of your composer.json related to `magento-hackathon/hackathon_asyncindex`
+* Via composer, remove the line of your composer.json related to `eugen814/AsyncIndex`
 
 
 Configuration
