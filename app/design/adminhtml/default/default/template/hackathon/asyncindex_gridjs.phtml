@@ -1,0 +1,22 @@
+<script type="text/javascript">
+
+// executes, through AJAX, the selected action from admin/process/list grid
+function executeProcessTask(elmnt, process, process_code) {
+    var confrm = confirm('Are you sure?');
+    if (confrm === true) {
+        var url = $(elmnt).previous('select').value;
+        new Ajax.Request(url, {
+            method: 'post',
+            parameters: { process: process, process_code: process_code },
+            onSuccess: function (response) {
+                $(elmnt).up('tr').setStyle({ backgroundColor: '#9effd2' });
+                $(elmnt).up('td').update('<span>' + response.responseText + '</span>');
+            },
+            onFailure: function (response) {
+                alert(response.responseText);
+            }
+        });
+    }
+}
+
+</script>

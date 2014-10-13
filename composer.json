@@ -1,8 +1,8 @@
 {
-    "name": "magento-hackathon/async-index",
+    "name": "eugen814/asyncindex",
     "license": "MIT",
     "type": "magento-module",
-    "description": "This extension allows to execute the index process asyncronously",
+    "description": "This extension allows to execute an index process asyncronously. Based on magento-hackathon/AsyncIndex",
     "authors": [
         {
             "name": "Daniel Fahlke aka Flyingmana",
@@ -11,6 +11,10 @@
         {
             "name": "Oprean Dan Stefan",
             "email": "dan@designxenon.com"
+        },
+        {
+        	"name": "Eugen Pop",
+        	"email": "eugen.pop20@gmail.com"
         }
     ],
     "suggest": {
