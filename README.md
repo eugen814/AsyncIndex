@@ -31,7 +31,7 @@ Installation Instructions
     },
     "repositories": [
 	    {
-            "type": "composer",
+            "type": "git",
             "url": "https://github.com/eugen814/AsyncIndex.git"
         }
     ],
